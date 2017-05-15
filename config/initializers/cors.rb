@@ -14,7 +14,7 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
       methods: [:gets, :options, :head]
   end
   allow do
-    origins 'locahost:3001'
+    origins 'locahost:8000'
 
     resource '*',
       headers: :any,
